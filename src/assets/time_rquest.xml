@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="preroll">
+    <InLine>
+      <AdSystem>Sample Ad System</AdSystem>
+      <AdTitle>Preroll Ad</AdTitle>
+      <Creatives>
+        <Creative>
+          <Linear skipoffset="00:00:05"> <!-- Ad becomes skippable after 5 seconds -->
+            <Duration>00:09:56</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
+                <![CDATA[https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://example.com]]>
+              </ClickThrough>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+
+  <Ad id="midroll">
+    <InLine>
+      <AdSystem>Sample Ad System</AdSystem>
+      <AdTitle>Midroll Ad</AdTitle>
+      <Creatives>
+        <Creative>
+          <Linear skipoffset="00:00:05"> <!-- Ad becomes skippable after 5 seconds -->
+            <Duration>00:09:56</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
+                <![CDATA[https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://example.com]]>
+              </ClickThrough>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+      <AdParameters>
+        <![CDATA[<parameters>...</parameters>]]>
+      </AdParameters>
+    </InLine>
+  </Ad>
+
+  <Ad id="postroll">
+    <InLine>
+      <AdSystem>Sample Ad System</AdSystem>
+      <AdTitle>Postroll Ad</AdTitle>
+      <Creatives>
+        <Creative>
+          <Linear skipoffset="00:00:05"> <!-- Ad becomes skippable after 5 seconds -->
+            <Duration>00:09:56</Duration>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360">
+                <![CDATA[https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://example.com]]>
+              </ClickThrough>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

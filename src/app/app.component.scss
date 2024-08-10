@@ -1,0 +1,40 @@
+@import "~video.js/dist/video-js.css";
+
+// .videojs-markers {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+// }
+
+// .videojs-marker {
+//   position: absolute;
+//   background: rgba(255, 0, 0, 0.7);
+//   color: white;
+//   padding: 2px 5px;
+//   border-radius: 3px;
+//   font-size: 12px;
+//   white-space: nowrap;
+//   transform: translateY(-50%);
+//   pointer-events: none; /* Make sure markers don’t interfere with player controls */
+// }
+
+/* app.component.scss */
+// .custom-marker {
+//     background-color: red;
+//     border-radius: 50%;
+//     height: 10px;
+//     width: 10px;
+//     position: absolute;
+//     top: 0;
+//   }
+
+.videoPlayer {
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+
+  // For mobile devices
+  @media only screen and (max-width: 768px) {
+    width: 100vw;
+  }
+}

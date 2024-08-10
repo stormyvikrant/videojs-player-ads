@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="12345">
+    <InLine>
+      <AdSystem>Your Ad System Name</AdSystem>
+      <AdTitle>Your Ad Title</AdTitle>
+      <Impression>
+        <URL><![CDATA[https://your-impression-tracking-url.com]]></URL>
+      </Impression>
+      <Creatives>
+        <Creative>
+          <Linear skipoffset="00:00:05"> <!-- Ad becomes skippable after 5 seconds -->
+            <Duration>00:09:56</Duration>
+            <MediaFiles>
+              <MediaFile
+                delivery="progressive"
+                type="video/mp4"
+                width="640"
+                height="360">
+                <![CDATA[http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://togethring.net/]]>
+              </ClickThrough>
+            </VideoClicks>
+            <AdParameters>
+              <![CDATA[<parameters>...</parameters>]]>
+            </AdParameters>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

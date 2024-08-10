@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="22222">
+    <InLine>
+      <AdSystem>Your Ad System Name</AdSystem>
+      <AdTitle>Your Ad Title</AdTitle>
+      <Description>Your Ad Description</Description>
+      
+      <Error>
+        <![CDATA[https://your-error-tracking-url.com]]>
+      </Error>
+      
+      <Impression>
+        <![CDATA[https://your-impression-tracking-url.com]]>
+      </Impression>
+      
+      <Creatives>
+        <Creative>
+          <Linear skipoffset="00:00:05"> <!-- Ad becomes skippable after 5 seconds -->
+            <Duration>00:00:10</Duration>
+            
+            <TrackingEvents>
+              <Tracking event="start">
+                <![CDATA[https://your-tracking-url.com/start]]>
+              </Tracking>
+              <Tracking event="firstQuartile">
+                <![CDATA[https://your-tracking-url.com/firstQuartile]]>
+              </Tracking>
+              <Tracking event="midpoint">
+                <![CDATA[https://your-tracking-url.com/midpoint]]>
+              </Tracking>
+              <Tracking event="thirdQuartile">
+                <![CDATA[https://your-tracking-url.com/thirdQuartile]]>
+              </Tracking>
+              <Tracking event="complete">
+                <![CDATA[https://your-tracking-url.com/complete]]>
+              </Tracking>
+              <Tracking event="pause">
+                <![CDATA[https://your-tracking-url.com/pause]]>
+              </Tracking>
+              <Tracking event="resume">
+                <![CDATA[https://your-tracking-url.com/resume]]>
+              </Tracking>
+              <Tracking event="skip">
+                <![CDATA[https://your-tracking-url.com/skip]]>
+              </Tracking>
+            </TrackingEvents>
+            
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://togethring.net/]]>
+              </ClickThrough>
+              <ClickTracking>
+                <![CDATA[https://your-click-tracking-url.com]]>
+              </ClickTracking>
+            </VideoClicks>
+            
+            <MediaFiles>
+              <MediaFile
+                delivery="progressive"
+                type="video/mp4"
+                bitrate="500"
+                width="640"
+                height="360"
+                scalable="true"
+                maintainAspectRatio="true">
+                <![CDATA[https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+            
+            <AdParameters>
+              <![CDATA[<parameters>...</parameters>]]>
+            </AdParameters>
+            
+          </Linear>
+        </Creative>
+      </Creatives>
+      
+    </InLine>
+  </Ad>
+</VAST>
